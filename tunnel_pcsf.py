@@ -2,7 +2,7 @@
 TunnelPCSF - Cylindrical Cloth Simulation Filter (Vectorized)
 ================================================================
 核心改进：
-  1. 完全 NumPy 向量化：step() / apply_collision() 不再有任何 Python 循环
+  1. NumPy 向量化：step() / apply_collision()
   2. KD-Tree 加速碰撞查询（scipy.spatial.cKDTree）
   3. 早停机制：连续多轮约束粒子数不变则提前结束
   4. 初始布料可视化：preview_cloth() 在模拟开始前输出图像供检查
