@@ -2,8 +2,7 @@ import laspy
 import numpy as np
 from tunnel_pcsf import TunnelPCSF
 
-las = laspy.read('data_input\\260028-051初支点云.las')
-# las = laspy.read('data_input\\data2-2_RailwayDri_longseg-MoveOutlierR_ROTATED.las')
+las = laspy.read('data_input\\data2-2_RailwayDri_longseg-MoveOutlierR_ROTATED.las')
 points = np.vstack([las.x, las.y, las.z]).T  # (N, 3)
 
 csf = TunnelPCSF()
