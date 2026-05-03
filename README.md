@@ -80,7 +80,7 @@ lining_idx, interior_idx = pcsf.do_filtering()
 | `time_step` | `0.65` | Simulation time step |
 | `iterations` | `500` | Max simulation iterations |
 | `smooth_slope` | `True` | Fill gaps in cloth after simulation |
-| `axis_method` | `'pca'` | Axis estimation: `'pca'` or `'provided'` |
+| `axis_method` | `'pca'` | Axis estimation: `'pca'` or `'Slice'` or `'provided'` |
 | `initial_radius_offset` | `0.5` | How far outside the tunnel the cloth starts (m) | (not necessary, Use scaling factor in some cases , default is r*1.5)
 
 ---
